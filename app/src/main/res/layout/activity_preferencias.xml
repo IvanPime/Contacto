@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12">
+    <EditText
+        android:id="@+id/url_preferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Url de web service"
+        android:layout_weight="2"/>
+    <RadioGroup android:id="@+id/RadioRegion"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <RadioButton android:id="@+id/RbOpcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa" />
+
+        <RadioButton android:id="@+id/RbOpcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americas" />
+
+        <RadioButton android:id="@+id/RbOpcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asia" />
+
+        <RadioButton android:id="@+id/RbOpcion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Europe" />
+
+        <RadioButton android:id="@+id/RbOpcion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oceania" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/email_preferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_weight="2"/>
+    <EditText
+        android:id="@+id/telefono_preferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/phone"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        >
+        <Button
+            android:id="@+id/cancelar_preferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:drawableLeft="@mipmap/ic_cancel"
+            android:textColor="#FFFFFF"
+            android:background="#ed5565"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/guardar_preferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:drawableLeft="@mipmap/ic_save"
+            android:textColor="#FFFFFF"
+            android:background="#448AFF"
+            android:layout_margin="4dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
